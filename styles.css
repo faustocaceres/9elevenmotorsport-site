@@ -175,7 +175,7 @@ section{scroll-margin-top:72px}
   display:flex; align-items:center; justify-content:center;
 }
 .arrow-btn:hover{border-color:#C8102E; color:#C8102E}
-.workshop-track{display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 var(--pad-x) 24px; scrollbar-width:none}
+.workshop-track{display:flex; gap:16px; justify-content:safe center; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 var(--pad-x) 24px; scrollbar-width:none}
 .workshop-track::-webkit-scrollbar{display:none}
 .workshop-item{flex:none; width:min(460px,84vw); margin:0; scroll-snap-align:start}
 .workshop-item .slot{width:100%; aspect-ratio:460/310; height:auto}

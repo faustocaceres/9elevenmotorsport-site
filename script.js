@@ -6,7 +6,8 @@
   const T = {
     en: {
       navSub: "Porsche Specialist",
-      navServices: "Services", navWorkshop: "Workshop", navAbout: "About", navContact: "Contact", navGallery: "Gallery",
+      navServices: "Services", navWorkshop: "Workshop", navPaintshop: "Paintshop", navAbout: "About", navContact: "Contact", navGallery: "Gallery",
+      workshopCtaTitle: "The Paintshop", workshopCtaLabel: "Paint & body — visit",
       heroEyebrow: "Santo Domingo · Independent Porsche Specialist",
       heroTitle1: "Precision Porsche service.", heroTitle2: "Nothing else.",
       heroSub: "Independent specialists. Factory-level standards. Diagnostics, maintenance and performance for every air- and water-cooled Porsche.",
@@ -64,7 +65,8 @@
     },
     es: {
       navSub: "Especialista Porsche",
-      navServices: "Servicios", navWorkshop: "Taller", navAbout: "Nosotros", navContact: "Contacto", navGallery: "Galería",
+      navServices: "Servicios", navWorkshop: "Taller", navPaintshop: "Paintshop", navAbout: "Nosotros", navContact: "Contacto", navGallery: "Galería",
+      workshopCtaTitle: "The Paintshop", workshopCtaLabel: "Pintura y carrocería — visitar",
       heroEyebrow: "Santo Domingo · Especialistas Porsche Independientes",
       heroTitle1: "Servicio Porsche de precisión.", heroTitle2: "Nada más.",
       heroSub: "Especialistas independientes. Estándares de fábrica. Diagnóstico, mantenimiento y performance para todo Porsche, air-cooled y water-cooled.",
@@ -161,7 +163,7 @@
 
   function renderWorkshop(t) {
     const track = $("#workshopTrack");
-    track.innerHTML = t.gallery.map(g => `
+    const items = t.gallery.map(g => `
       <figure class="workshop-item" data-reveal="1">
         <div class="slot">
           <div class="img-slot">
@@ -177,6 +179,26 @@
         </figcaption>
       </figure>
     `).join("");
+
+    const cta = `
+      <a class="workshop-item workshop-cta" href="paintshop.html" data-reveal="1" aria-label="${escapeHtml(t.workshopCtaTitle)}">
+        <div class="slot">
+          <div class="img-slot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 15l-5-5-8 8"/></svg>
+            <span class="cap">${escapeHtml(t.workshopCtaTitle)}</span>
+            <div class="cta-overlay">
+              <span class="cta-title">${escapeHtml(t.workshopCtaTitle)}<span class="arrow"> →</span></span>
+            </div>
+          </div>
+        </div>
+        <figcaption>
+          <span class="num">W-06</span>
+          <span class="lbl">${escapeHtml(t.workshopCtaLabel)}</span>
+        </figcaption>
+      </a>
+    `;
+
+    track.innerHTML = items + cta;
     setupReveal();
   }
 

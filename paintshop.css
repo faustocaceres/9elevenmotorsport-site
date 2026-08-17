@@ -1,0 +1,42 @@
+/* ============================================================
+   THE PAINTSHOP — page-specific styles
+   Reuses the shared 9Eleven design system (styles.css).
+   Only components not already present in the main site live here.
+   ============================================================ */
+
+/* "← Main site" header link (nav-link typography, always visible) */
+.ps-back{
+  font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--text-secondary); white-space:nowrap;
+  transition:color var(--duration-fast) var(--ease-standard);
+}
+.ps-back:hover{color:#fff}
+
+/* Full-bleed hero placeholder: drop the hairline box the .img-slot
+   normally draws so the hero photo reads edge-to-edge. */
+.hero-image .img-slot{border:none; border-radius:0}
+
+/* Section 02/02 — "Out of the shop" raised band */
+.ps-band{
+  background:var(--surface-raised);
+  border-top:1px solid var(--border-subtle);
+  border-bottom:1px solid var(--border-subtle);
+  padding:var(--pad-section) 0;
+}
+.ps-band .ps-inner{max-width:1200px; margin:0 auto; padding:0 var(--pad-x)}
+/* mosaic tiles sit on the raised band, so give the placeholder a hair more contrast */
+.ps-band .gallery-item .img-slot{background:color-mix(in srgb, var(--silver-metallic) 6%, transparent)}
+
+/* CTA strip */
+.cta-strip{border-top:1px solid var(--border-subtle); padding:var(--pad-section) var(--pad-x)}
+.cta-strip-inner{max-width:720px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; gap:18px}
+.cta-strip h2{
+  font-family:var(--font-display); font-size:clamp(34px,5.5vw,52px); font-weight:600;
+  text-transform:uppercase; line-height:1; margin:0; color:#fff;
+}
+.cta-strip p{color:var(--text-secondary); font-size:15px; line-height:1.6; margin:0; max-width:520px}
+.cta-strip .cta-btns{display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:8px}
+
+/* Footer back-link */
+.footer-back{font-size:12px; letter-spacing:0.06em; color:var(--text-tertiary)}
+.footer-back:hover{color:var(--red-guards)}

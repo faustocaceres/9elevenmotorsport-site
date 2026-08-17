@@ -29,7 +29,7 @@
         { num: "W-01", label: "Service bay", ph: "Service bay — lift with 911", img: "assets/workshop-servicebay.jpg", alt: "Porsche on the jack in the service bay with control arms laid out at 9Eleven" },
         { num: "W-02", label: "Engine room", ph: "Engine build / assembly area", img: "assets/workshop-engine.jpg", alt: "Porsche engine out on the stand at 9Eleven" },
         { num: "W-03", label: "Parts storage", ph: "Parts storage — OEM inventory", img: "assets/workshop-parts.jpg", alt: "Porsche body panels and parts in storage at 9Eleven" },
-        { num: "W-04", label: "Paint shop", ph: "Paint shop — booth / refinishing", img: "assets/workshop-paint-944.jpg", alt: "Red Porsche 944 masked and freshly painted in the 9Eleven booth" }
+        { num: "W-04", label: "Paint shop", ph: "Paint shop — booth / refinishing", img: "assets/workshop-paint-mural.jpg", alt: "Hand-painted carbon-fibre Ferrari hood mural at the 9Eleven paint shop" }
       ],
       secGallery: "Gallery", galleryTitle: "The cars",
       galleryLead: "Recent work and cars through the shop. Drop your photos into the grid.",
@@ -88,7 +88,7 @@
         { num: "W-01", label: "Bahía de servicio", ph: "Bahía de servicio — 911 en el elevador", img: "assets/workshop-servicebay.jpg", alt: "Porsche en el gato en la bahía de servicio con brazos de control en el piso en 9Eleven" },
         { num: "W-02", label: "Sala de motores", ph: "Área de armado de motores", img: "assets/workshop-engine.jpg", alt: "Motor Porsche desmontado en el soporte en 9Eleven" },
         { num: "W-03", label: "Almacén de piezas", ph: "Almacén de piezas — inventario OEM", img: "assets/workshop-parts.jpg", alt: "Paneles y piezas Porsche en almacén en 9Eleven" },
-        { num: "W-04", label: "Taller de pintura", ph: "Taller de pintura — cabina / refinishing", img: "assets/workshop-paint-944.jpg", alt: "Porsche 944 rojo enmascarado y recién pintado en la cabina de 9Eleven" }
+        { num: "W-04", label: "Taller de pintura", ph: "Taller de pintura — cabina / refinishing", img: "assets/workshop-paint-mural.jpg", alt: "Mural pintado a mano en capó de fibra de carbono Ferrari en el taller de pintura de 9Eleven" }
       ],
       secGallery: "Galería", galleryTitle: "Los autos",
       galleryLead: "Trabajos recientes y autos que han pasado por el taller. Arrastra tus fotos a la cuadrícula.",

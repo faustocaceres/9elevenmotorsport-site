@@ -23,7 +23,7 @@
       ],
       sec2Label: "Out of the shop", mosaicTitle: "Out of the shop",
       mosaic: [
-        { cols: 2, rows: 2, num: "P-01", label: "Feature finish", ph: "Feature finish — full respray" },
+        { cols: 2, rows: 2, num: "P-01", label: "Feature finish", ph: "Feature finish — full respray", img: "assets/paintshop-feature.jpg", alt: "Freshly painted white Porsche 911 rear quarter, masked in the 9Eleven booth" },
         { cols: 2, rows: 1, num: "P-02", label: "Color match", ph: "Color match" },
         { cols: 2, rows: 1, num: "P-03", label: "Before / after", ph: "Before / after" },
         { cols: 2, rows: 1, num: "P-04", label: "Delivery", ph: "Delivery" }
@@ -54,7 +54,7 @@
       ],
       sec2Label: "Saliendo del taller", mosaicTitle: "Saliendo del taller",
       mosaic: [
-        { cols: 2, rows: 2, num: "P-01", label: "Acabado destacado", ph: "Acabado destacado — repintado completo" },
+        { cols: 2, rows: 2, num: "P-01", label: "Acabado destacado", ph: "Acabado destacado — repintado completo", img: "assets/paintshop-feature.jpg", alt: "Cuarto trasero de Porsche 911 blanco recién pintado, enmascarado en la cabina de 9Eleven" },
         { cols: 2, rows: 1, num: "P-02", label: "Igualación de color", ph: "Igualación de color" },
         { cols: 2, rows: 1, num: "P-03", label: "Antes / después", ph: "Antes / después" },
         { cols: 2, rows: 1, num: "P-04", label: "Entrega", ph: "Entrega" }
@@ -109,8 +109,9 @@
     grid.innerHTML = t.mosaic.map(p => `
       <figure class="gallery-item ${p.cols === 2 ? "c2" : ""} ${p.rows === 2 ? "r2" : ""}" data-reveal="1">
         <div class="img-slot" style="height:100%">
-          ${PLACEHOLDER_SVG}
-          <span class="cap">${escapeHtml(p.ph)}</span>
+          ${p.img
+            ? `<img src="${p.img}" alt="${escapeHtml(p.alt || p.label)}" loading="lazy">`
+            : `${PLACEHOLDER_SVG}<span class="cap">${escapeHtml(p.ph)}</span>`}
         </div>
         <figcaption>
           <span class="num">${escapeHtml(p.num)}</span>

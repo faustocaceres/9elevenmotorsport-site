@@ -184,7 +184,6 @@
       <a class="workshop-item workshop-cta" href="paintshop.html" data-reveal="1" aria-label="${escapeHtml(t.workshopCtaTitle)}">
         <div class="slot">
           <div class="img-slot">
-            <img src="assets/workshop-paint-944.jpg" alt="${escapeHtml(t.workshopCtaTitle)}" loading="lazy">
             <div class="cta-overlay">
               <span class="cta-title">${escapeHtml(t.workshopCtaTitle)}<span class="arrow"> →</span></span>
             </div>

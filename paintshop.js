@@ -24,9 +24,9 @@
       sec2Label: "Out of the shop", mosaicTitle: "Out of the shop",
       mosaic: [
         { cols: 2, rows: 2, num: "P-01", label: "Feature finish", ph: "Feature finish — full respray", img: "assets/paintshop-feature.jpg", alt: "Freshly painted white Porsche 911 rear quarter, masked in the 9Eleven booth" },
-        { cols: 2, rows: 1, num: "P-02", label: "Color match", ph: "Color match" },
-        { cols: 2, rows: 1, num: "P-03", label: "Before / after", ph: "Before / after" },
-        { cols: 2, rows: 1, num: "P-04", label: "Delivery", ph: "Delivery" }
+        { cols: 2, rows: 1, num: "P-02", label: "Color match", ph: "Color match", img: "assets/workshop-paint-944.jpg", alt: "Red Porsche 944 masked and freshly painted to a color-matched gloss in the 9Eleven booth" },
+        { cols: 2, rows: 1, num: "P-03", label: "Before / after", ph: "Before / after", img: "assets/paintshop-beforeafter.jpg", alt: "Deep red masked car freshly refinished in the 9Eleven paint booth" },
+        { cols: 2, rows: 1, num: "P-04", label: "Custom paint", ph: "Custom paint", img: "assets/workshop-paint-mural.jpg", alt: "Hand-painted carbon-fibre Ferrari hood mural at the 9Eleven paint shop" }
       ],
       ctaTitle: "Ready for paint?",
       ctaSub: "Send photos of your car on WhatsApp for a preliminary estimate.",
@@ -55,9 +55,9 @@
       sec2Label: "Saliendo del taller", mosaicTitle: "Saliendo del taller",
       mosaic: [
         { cols: 2, rows: 2, num: "P-01", label: "Acabado destacado", ph: "Acabado destacado — repintado completo", img: "assets/paintshop-feature.jpg", alt: "Cuarto trasero de Porsche 911 blanco recién pintado, enmascarado en la cabina de 9Eleven" },
-        { cols: 2, rows: 1, num: "P-02", label: "Igualación de color", ph: "Igualación de color" },
-        { cols: 2, rows: 1, num: "P-03", label: "Antes / después", ph: "Antes / después" },
-        { cols: 2, rows: 1, num: "P-04", label: "Entrega", ph: "Entrega" }
+        { cols: 2, rows: 1, num: "P-02", label: "Igualación de color", ph: "Igualación de color", img: "assets/workshop-paint-944.jpg", alt: "Porsche 944 rojo enmascarado y recién pintado con acabado brillante igualado en la cabina de 9Eleven" },
+        { cols: 2, rows: 1, num: "P-03", label: "Antes / después", ph: "Antes / después", img: "assets/paintshop-beforeafter.jpg", alt: "Auto rojo profundo enmascarado recién repintado en la cabina de pintura de 9Eleven" },
+        { cols: 2, rows: 1, num: "P-04", label: "Pintura personalizada", ph: "Pintura personalizada", img: "assets/workshop-paint-mural.jpg", alt: "Mural pintado a mano en capó de fibra de carbono Ferrari en el taller de pintura de 9Eleven" }
       ],
       ctaTitle: "¿Listo para pintar?",
       ctaSub: "Envía fotos de tu auto por WhatsApp para un estimado preliminar.",
